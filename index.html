@@ -77,7 +77,6 @@ h2{font:800 1.7rem/1.1 var(--head);font-stretch:90%;letter-spacing:-.01em;margin
 .job::before{content:"";position:absolute;left:-26px;top:7px;width:13px;height:13px;border-radius:50%;background:var(--bg);border:3px solid var(--ink)}
 .job.now::before{background:var(--signal);border-color:var(--signal)}
 .org{font:700 1.25rem var(--head);margin:0}
-.co-note{color:var(--muted);font-size:.9rem;margin:0 0 10px}
 .pos{background:var(--surface);border:1px solid var(--line);border-radius:10px;margin:8px 0}
 .pos summary{list-style:none;cursor:pointer;padding:13px 44px 13px 16px;position:relative}
 .pos summary::-webkit-details-marker{display:none}
@@ -85,12 +84,14 @@ h2{font:800 1.7rem/1.1 var(--head);font-stretch:90%;letter-spacing:-.01em;margin
 .pos[open] summary::after{transform:translateY(-50%) rotate(45deg)}
 .pos h3{font:700 1.02rem var(--head);margin:0}
 .dates{font-size:.85rem;color:var(--muted)}
+.pos .sub{display:block;font-style:italic;font-weight:600;font-size:.88rem;color:var(--muted);margin-top:2px}
 .pos ul{margin:0;padding:0 16px 14px 34px}
 .pos li{margin:0 0 8px;font-size:.95rem}
 .pos li b{font-weight:600}
 
 /* two-col */
 .cols{display:grid;gap:30px}
+.cols h2{margin-bottom:16px}
 @media(min-width:700px){.cols{grid-template-columns:1fr 1fr}}
 .item{margin:0 0 16px}
 .item b{display:block;font-weight:600}
@@ -123,7 +124,7 @@ footer{padding:30px 0 calc(40px + env(safe-area-inset-bottom,0px));border-top:1p
       <h1>Asen Mazgarev</h1>
       <p class="role">Engineering Manager | Group Leader</p>
       <div class="bar-signal"></div>
-      <p class="loc">Sofia, Bulgaria &middot; Automotive engineering</p>
+      <p class="loc">1612 Sofia, Bulgaria</p>
     </div>
   </header>
 
@@ -150,124 +151,50 @@ footer{padding:30px 0 calc(40px + env(safe-area-inset-bottom,0px));border-top:1p
       <h2>About me</h2>
       <p class="lead">Result-oriented Engineering Manager and Automotive Operations Expert with extensive experience leading cross-functional teams and delivering complex product programs for premium OEMs. Highly structured, disciplined, and quality-focused, with a proven track record in operational excellence, process improvement, and technical leadership. Thrive in high-pressure environments through strategic prioritization, clear decision-making and effective problem-solving. Committed to developing high-performing engineering talent and driving sustainable organizational growth.</p>
       <div class="stats">
-        <div class="stat"><b>~50</b><span>engineers led across three teams at Bosch</span></div>
-        <div class="stat"><b>10+ yrs</b><span>in automotive engineering and validation</span></div>
-        <div class="stat"><b>ISTQB</b><span>Advanced Level, Test Manager</span></div>
+        <div class="stat"><b>~50</b><span>engineers led at Bosch Engineering Center Sofia</span></div>
+        <div class="stat"><b>3</b><span>engineering teams led as Engineering Manager</span></div>
+        <div class="stat"><b>ISTQB</b><span>Certified Tester, Advanced Level, Test Manager</span></div>
       </div>
     </section>
 
     <section id="experience">
-      <h2>Experience</h2>
-      <ol class="tl">
-
-        <li class="job now">
-          <h3 class="org">Bosch Engineering Center Sofia</h3>
-          <p class="co-note">2020 – 2026</p>
-          <details class="pos" open>
-            <summary><h3>Engineering Manager | Group Leader</h3><span class="dates">Jun 2023 – Aug 2026</span></summary>
-            <ul>
-              <li><b>Strategic leadership:</b> led three teams of about 50 engineers across System Engineering, Software Development, Cybersecurity and Model-in-the-Loop (MiL) development and evaluation.</li>
-              <li><b>Talent development:</b> ran performance management, mentoring and career growth. Lectured at the Bosch ECS Career Camp.</li>
-              <li><b>Talent acquisition:</b> Lead Technical Examiner for engineering interviews, defining technical competency standards.</li>
-            </ul>
-          </details>
-          <details class="pos">
-            <summary><h3>Technical Team Leader</h3><span class="dates">Mar 2020 – Jun 2023</span></summary>
-            <ul>
-              <li><b>Cross-functional management:</b> coordinated three teams across Systems Engineering, Cybersecurity and Simulation-Based Testing to hit complex validation milestones.</li>
-              <li><b>Process alignment:</b> aligned virtual simulation with physical systems validation, improving test-cycle efficiency and end-to-end coverage.</li>
-              <li><b>Team scaling:</b> contributed to the Bosch ECS Career Camp, mentoring junior and senior specialists.</li>
-            </ul>
-          </details>
-        </li>
-
-        <li class="job">
-          <h3 class="org">Visteon Corporation</h3>
-          <p class="co-note">2016 – 2020</p>
-          <details class="pos">
-            <summary><h3>Validation Project Leader</h3><span class="dates">Mar 2019 – Mar 2020</span></summary>
-            <ul>
-              <li><b>Project and team leadership:</b> led the test engineers on a Daimler AG Instrument Cluster project (MRA2 platform).</li>
-              <li><b>Coordination:</b> aligned validation across global teams, suppliers and stakeholders.</li>
-              <li><b>ASPICE:</b> developed and optimised validation processes to Automotive SPICE standards.</li>
-              <li><b>Infrastructure:</b> planned HiL bench sessions and in-vehicle testing, locally and at customer sites.</li>
-              <li><b>Talent growth:</b> introduced structured career development frameworks for the team.</li>
-            </ul>
-          </details>
-          <details class="pos">
-            <summary><h3>Automation Test Engineer</h3><span class="dates">Jan 2016 – Mar 2019</span></summary>
-            <ul>
-              <li><b>Acting Team Leader</b> for 1.5 years, balancing delivery with coordination and mentoring.</li>
-              <li><b>Automation:</b> designed and ran automated Black Box tests for functional and robustness validation.</li>
-              <li><b>Platforms:</b> validated Instrument Cluster, Multimedia, Connectivity and Phone functions for Mercedes-Benz on MFA2 and MRA2.</li>
-              <li><b>Quality:</b> authored the robustness test strategy and led technical reviews.</li>
-            </ul>
-          </details>
-        </li>
-
-        <li class="job">
-          <h3 class="org">INFINITI Bulgaria</h3>
-          <p class="co-note">2013 – 2015</p>
-          <details class="pos">
-            <summary><h3>Service Advisor &amp; Workshop Manager</h3><span class="dates">Apr 2013 – Dec 2015</span></summary>
-            <ul>
-              <li>Directed daily workshop operations, scheduling and workflow at an authorised Infiniti and Nissan service centre.</li>
-              <li>Ensured compliance with corporate, safety and equipment standards.</li>
-              <li>Managed the repairs department for quality, efficiency and customer satisfaction.</li>
-            </ul>
-          </details>
-        </li>
-
-        <li class="job">
-          <h3 class="org">NetInfo</h3>
-          <p class="co-note">2008 – 2013</p>
-          <details class="pos">
-            <summary><h3>Grand-Prix Editor &amp; F1 Project Leader</h3><span class="dates">Dec 2008 – Apr 2013</span></summary>
-            <ul>
-              <li><b>Jury member</b> for the "Car of the Year" competition.</li>
-              <li>Launched and managed a Formula 1 section across SPORTNI.bg and VESTI.bg.</li>
-              <li>Wrote automotive and motorsport articles covering major Formula 1 events and industry developments.</li>
-            </ul>
-          </details>
-        </li>
-      </ol>
+      <h2>Leadership &amp; Professional Experience</h2>
+      <ol class="tl"><li class="job now"><h3 class="org">BOSCH Engineering Center Sofia</h3><details class="pos" open><summary><h3>Position: Engineering Manager | Group Leader</h3><span class="sub">Strategic Leadership &amp; Engineering Management</span><span class="dates">June 2023 – August 2026</span></summary><ul><li><b>Strategic Leadership:</b> Led three engineering teams comprising approximately 50 engineers across cutting-edge automotive domains, including System Engineering, Software Development, Cybersecurity, and Model-in-the-Loop (MiL) Development and Evaluation.</li><li><b>Talent Development &amp; Mentorship:</b> Managed end-to-end employee development, including performance management, mentoring, career growth, and capability building for engineering talent. Delivered lectures at the Bosch ECS Career Camp, supporting the upskilling of next-generation automotive engineering professionals.</li><li><b>Technical Talent Acquisition:</b> Served as the Lead Technical Examiner for engineering interviews, defining technical competency standards and supporting the recruitment of high-calibre engineering talent.</li></ul></details><details class="pos"><summary><h3>Position: Technical Team Leader</h3><span class="sub">Cross-Functional Team Leadership</span><span class="dates">March 2020 – June 2023</span></summary><ul><li><b>Cross-Functional Management:</b> Managed and coordinated three technical teams across Systems Engineering, Cybersecurity, and Simulation-Based Testing to deliver complex validation milestones.</li><li><b>Process Alignment:</b> Aligned virtual simulation environments with physical systems validation activities, improving test-cycle efficiency and strengthening end-to-end validation coverage.</li><li><b>Team Scaling Initiatives:</b> Contributed to corporate growth programs, including the Bosch ECS Career Camp, mentoring junior and senior specialists and preparing internal talent for more advanced technical and leadership roles.</li></ul></details></li><li class="job"><h3 class="org">Visteon Corporation</h3><details class="pos"><summary><h3>Position: Validation Project Leader</h3><span class="sub">Project Delivery &amp; Process Excellence</span><span class="dates">March 2019 – March 2020</span></summary><ul><li><b>Project &amp; Team Leadership:</b> Led a high-performing team of test engineers for a prominent Daimler AG Instrument Cluster project on the MRA2 platform.</li><li><b>Cross-Functional Coordination:</b> Coordinated validation activities across global project teams, suppliers, and stakeholders to ensure seamless integration within the vehicle architecture.</li><li><b>Process Compliance (ASPICE):</b> Developed and optimized validation processes in line with stringent Automotive SPICE standards and industry best practices.</li><li><b>Resource &amp; Infrastructure Management:</b> Planned and executed complex validation sessions on HiL benches, as well as local and customer-site in-vehicle testing.</li><li><b>Talent Growth:</b> Implemented structured career development frameworks to elevate team competencies, technical expertise, and long-term talent growth.</li></ul></details><details class="pos"><summary><h3>Position: Automation Test Engineer</h3><span class="sub">Technical Expertise &amp; Engineering Leadership</span><span class="dates">January 2016 – March 2019</span></summary><ul><li><b>Acting Team Leadership:</b> Served as Acting Team Leader for 1.5 years, balancing technical delivery with team coordination, mentorship, and task prioritization.</li><li><b>Automated Testing &amp; Strategy:</b> Designed, implemented, and executed automated test cases using Black Box techniques for functional and robustness validation.</li><li><b>Domain &amp; Platform Experience:</b> Validated Instrument Cluster, Multimedia, Connectivity, and Phone functionalities for Mercedes-Benz Group AG across MFA2 and MRA2 vehicle platforms.</li><li><b>Quality &amp; Process Improvement:</b> Authored and drove the robustness test strategy, conducted technical reviews, and contributed to continuous process optimization across validation activities.</li></ul></details></li><li class="job"><h3 class="org">INFINITI Bulgaria</h3><details class="pos"><summary><h3>Position: Service Advisor &amp; Workshop Manager</h3><span class="sub">Operations &amp; Workshop Management</span><span class="dates">April 2013 – December 2015</span></summary><ul><li><b>Operational Leadership:</b> Directed daily workshop operations, including resource scheduling, workflow coordination, and service-process optimization for an authorized Infiniti and Nissan service center.</li><li><b>Process &amp; Quality Control:</b> Ensured compliance with corporate standards, safety regulations, and equipment-utilization policies across all workshop activities.</li><li><b>Departmental Oversight:</b> Managed the repairs department, maintaining high-quality service delivery, operational efficiency, and strong customer satisfaction.</li></ul></details></li><li class="job"><h3 class="org">NetInfo</h3><details class="pos"><summary><h3>Position: Grand-Prix Editor &amp; F1 Project Leader</h3><span class="sub">Media Project Leadership &amp; Automotive Expertise</span><span class="dates">December 2008 – April 2013</span></summary><ul><li><b>Automotive Industry Jury:</b> Served as an official jury member for the prestigious "Car of the Year" competition, evaluating automotive innovations, market trends, and vehicle performance.</li><li><b>Project &amp; Content Management:</b> Developed, launched, and managed a dedicated Formula 1 digital section across major national media platforms, including SPORTNI.bg and VESTI.bg.</li><li><b>Industry Insights:</b> Authored high-impact automotive and motorsport articles, covering major Formula 1 events, industry developments, and global achievements in the automotive sector.</li></ul></details></li></ol>
     </section>
 
-    <section id="education">
-      <h2>Education &amp; certifications</h2>
-      <div class="cols">
-        <div>
-          <div class="item"><b>PhD candidate, Transport, Aviation and Navigation</b><span>Technical University Sofia, 2021 – 2027</span><br><span>Thesis: a system for estimating the predictive friction coefficient ahead of the vehicle.</span></div>
-          <div class="item"><b>MEng, Internal Combustion Engines and Automotive Engineering</b><span>Technical University Sofia, 2018, with distinction</span></div>
-          <div class="item"><b>BEng, Transport Technology and Management</b><span>Technical University Sofia, 2011</span></div>
-        </div>
-        <div>
-          <div class="item"><b>ISTQB Advanced Level, Test Manager</b><span>SEETB, Dec 2017</span></div>
-          <div class="item"><b>ISTQB Agile Tester Extension</b><span>SEETB, Nov 2016</span></div>
-          <div class="item"><b>ISTQB Foundation Level</b><span>SEETB, Apr 2016</span></div>
-          <div class="item"><b>Driver Authorization for Test Vehicles</b><span>RAISCH Group, May 2017</span></div>
-        </div>
+    <section id="education" class="cols">
+      <div>
+        <h2>Education</h2>
+        <div class="item"><b>PhD Candidate Transport, Aviation, and Navigation</b><span>Technical University Sofia<br>(2021 - 2027)</span></div>
+        <div class="item"><span>Dissertation Topic: Development of a System for Estimating the Predictive Friction Coefficient Ahead of the Vehicle.</span></div>
+        <div class="item"><b>MEng Internal Combustion Engines and Automotive Engineering</b><span>Technical University Sofia<br>Distinction (2018)</span></div>
+        <div class="item"><b>BEng Transport Technology and Management</b><span>Technical University Sofia<br>(2011)</span></div>
+      </div>
+      <div>
+        <h2>Certifications</h2>
+        <div class="item"><b>ISTQB Certified Tester – Advanced Level, Test Manager</b><span>SEETB (Dec 2017)</span></div>
+        <div class="item"><b>Driver Authorization for Test Vehicles</b><span>RAISCH Group (May 2017)</span></div>
+        <div class="item"><b>ISTQB Certified Tester – Agile Tester Extension</b><span>SEETB (Nov 2016)</span></div>
+        <div class="item"><b>ISTQB Certified Tester – Foundation Level</b><span>SEETB (Apr 2016)</span></div>
       </div>
     </section>
 
-    <section id="more">
-      <h2>Languages &amp; licences</h2>
-      <div class="cols">
-        <div>
-          <div class="item"><b>Bulgarian</b><span>Native</span></div>
-          <div class="item"><b>English</b><span>Professional working proficiency</span></div>
-        </div>
-        <div>
-          <div class="item"><b>Driving licence categories</b></div>
-          <ul class="chips" aria-label="Driving licence categories"><li>A</li><li>B</li><li>C</li><li>D</li><li>E</li></ul>
-          <p class="item" style="margin-top:14px"><span>Authorised for prototype and non-homologated vehicle testing (early development phase, FB-E).</span></p>
-        </div>
+    <section id="more" class="cols">
+      <div>
+        <h2>Languages</h2>
+        <div class="item"><b>Bulgarian</b><span>Native</span></div>
+        <div class="item"><b>English</b><span>Professional Working Proficiency</span></div>
+      </div>
+      <div>
+        <h2>Driving Licenses</h2>
+        <div class="item"><b>Categories</b><span>A, B, C, D, E</span></div>
+        <div class="item"><b>Special Authorizations</b><span>Prototypical &amp; Non-Homologated Vehicle Testing (Early Development Phase – FB-E)</span></div>
       </div>
     </section>
   </main>
 
   <footer>
-    <p><a href="mailto:asen@mazgarev.com">asen@mazgarev.com</a> &middot; <a href="tel:+359889403940">+359 889 40 39 40</a> &middot; Sofia, Bulgaria</p>
+    <p><a href="mailto:asen@mazgarev.com">asen@mazgarev.com</a> &middot; <a href="tel:+359889403940">+359 889 40 39 40</a> &middot; 1612 Sofia, Bulgaria</p>
   </footer>
 </div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
