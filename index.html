@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Asen Mazgarev | Engineering Manager &amp; Group Leader</title>
+<meta name="description" content="Asen Mazgarev: Engineering Manager and Group Leader in automotive. Experience, education, certifications and contact details.">
+<meta name="theme-color" content="#2b2d31">
+<meta property="og:title" content="Asen Mazgarev | Engineering Manager &amp; Group Leader">
+<meta property="og:description" content="Led teams of ~50 engineers at Bosch. Automotive validation, cybersecurity and simulation.">
+<meta property="og:type" content="profile">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232b2d31'/%3E%3Crect x='20' y='62' width='60' height='10' fill='%23ffe600'/%3E%3Ctext x='50' y='52' font-size='44' font-family='Arial' font-weight='700' fill='white' text-anchor='middle'%3EAM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,500..800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5f5f3; --surface:#ffffff; --ink:#26282c; --muted:#5d6168; --line:#dcdcd8;
+  --signal:#ffe600; --on-signal:#26282c; --side:#2b2d31; --link:#26282c;
+  --head:"Archivo","Arial Narrow",Arial,sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+:root[data-theme="dark"]{
+  --bg:#1c1d20; --surface:#26282c; --ink:#ecece8; --muted:#a3a7ae; --line:#3a3d42; --link:#ffe600;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#1c1d20; --surface:#26282c; --ink:#ecece8; --muted:#a3a7ae; --line:#3a3d42; --link:#ffe600;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.6 var(--body);-webkit-font-smoothing:antialiased}
+a{color:var(--link)}
+:focus-visible{outline:3px solid var(--signal);outline-offset:3px;border-radius:4px}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+
+/* top bar */
+.bar{display:flex;justify-content:flex-end;padding:14px 0}
+.theme{background:none;border:1px solid var(--line);color:var(--muted);border-radius:99px;padding:6px 14px;font:500 .8rem var(--body);cursor:pointer}
+.theme:hover{color:var(--ink);border-color:var(--ink)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:140px 1fr;gap:24px;align-items:center;padding:8px 0 32px}
+.photo{width:140px;height:140px;border-radius:50%;background:var(--side);overflow:hidden;display:grid;place-items:center;color:#fff;font:700 2.6rem var(--head);box-shadow:0 0 0 4px var(--signal)}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block}
+h1{font:800 clamp(2.4rem,9vw,4.4rem)/.95 var(--head);font-stretch:85%;letter-spacing:-.02em;margin:0}
+.role{font:600 1.1rem var(--head);margin:14px 0 0;color:var(--muted)}
+.bar-signal{height:10px;background:var(--signal);margin:14px 0 0;width:min(100%,360px);transform-origin:left;animation:draw .8s cubic-bezier(.2,.7,.2,1) both}
+@keyframes draw{from{transform:scaleX(0)}}
+.loc{margin:12px 0 0;color:var(--muted);font-size:.95rem}
+
+/* actions */
+.actions{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:0 0 36px}
+.btn{display:flex;align-items:center;justify-content:center;gap:9px;padding:14px 12px;border-radius:10px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);font:600 .95rem var(--body);text-decoration:none;cursor:pointer;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.primary{background:var(--signal);border-color:var(--signal);color:var(--on-signal)}
+.btn.wide{grid-column:1/-1}
+@media(min-width:640px){.actions{grid-template-columns:repeat(4,1fr)}.btn.wide{grid-column:auto}}
+
+/* sections */
+section{padding:34px 0;border-top:1px solid var(--line)}
+h2{font:800 1.7rem/1.1 var(--head);font-stretch:90%;letter-spacing:-.01em;margin:0 0 20px;display:inline-block;background:linear-gradient(var(--signal),var(--signal)) 0 100%/100% 8px no-repeat;padding-bottom:2px}
+.lead{font-size:1.1rem;max-width:62ch;margin:0}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:26px}
+.stat{background:var(--surface);border-left:6px solid var(--signal);padding:14px 14px 12px}
+.stat b{display:block;font:800 clamp(1.5rem,6vw,2.3rem)/1 var(--head)}
+.stat span{display:block;margin-top:6px;font-size:.82rem;color:var(--muted);line-height:1.35}
+
+/* timeline = the career road */
+.tl{position:relative;margin:0;padding:0 0 0 26px;list-style:none}
+.tl::before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:3px;background:repeating-linear-gradient(var(--line) 0 10px,transparent 10px 16px)}
+.job{position:relative;margin:0 0 26px}
+.job::before{content:"";position:absolute;left:-26px;top:7px;width:13px;height:13px;border-radius:50%;background:var(--bg);border:3px solid var(--ink)}
+.job.now::before{background:var(--signal);border-color:var(--signal)}
+.org{font:700 1.25rem var(--head);margin:0}
+.co-note{color:var(--muted);font-size:.9rem;margin:0 0 10px}
+.pos{background:var(--surface);border:1px solid var(--line);border-radius:10px;margin:8px 0}
+.pos summary{list-style:none;cursor:pointer;padding:13px 44px 13px 16px;position:relative}
+.pos summary::-webkit-details-marker{display:none}
+.pos summary::after{content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);font:600 1.4rem var(--head);color:var(--muted);transition:transform .2s}
+.pos[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+.pos h3{font:700 1.02rem var(--head);margin:0}
+.dates{font-size:.85rem;color:var(--muted)}
+.pos ul{margin:0;padding:0 16px 14px 34px}
+.pos li{margin:0 0 8px;font-size:.95rem}
+.pos li b{font-weight:600}
+
+/* two-col */
+.cols{display:grid;gap:30px}
+@media(min-width:700px){.cols{grid-template-columns:1fr 1fr}}
+.item{margin:0 0 16px}
+.item b{display:block;font-weight:600}
+.item span{color:var(--muted);font-size:.92rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
+.chips li{border:1px solid var(--line);background:var(--surface);border-radius:99px;padding:5px 13px;font-size:.9rem}
+
+/* footer */
+footer{padding:30px 0 calc(40px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translate(-50%,30px);background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:99px;font-size:.9rem;opacity:0;pointer-events:none;transition:.25s}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+@media(max-width:520px){
+  .hero{grid-template-columns:1fr;justify-items:start;gap:18px}
+  .photo{width:112px;height:112px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+@media print{.bar,.actions,.toast{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="bar"><button class="theme" id="theme" type="button" aria-label="Switch colour theme">Dark mode</button></div>
+
+  <header class="hero">
+    <div class="photo" aria-hidden="false">
+      <img src="photo.jpg" alt="Portrait of Asen Mazgarev" onerror="this.remove();this.parentNode.textContent='AM'">
+    </div>
+    <div>
+      <h1>Asen Mazgarev</h1>
+      <p class="role">Engineering Manager | Group Leader</p>
+      <div class="bar-signal"></div>
+      <p class="loc">Sofia, Bulgaria &middot; Automotive engineering</p>
+    </div>
+  </header>
+
+  <nav class="actions" aria-label="Contact and downloads">
+    <a class="btn primary wide" href="CV_Asen_Mazgarev.pdf" download>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 20h16"/></svg>Download CV
+    </a>
+    <button class="btn" id="vcard" type="button">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM19 8v6M22 11h-6"/></svg>Save contact
+    </button>
+    <a class="btn" href="mailto:asen@mazgarev.com">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>Email
+    </a>
+    <a class="btn" href="tel:+359889403940">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/></svg>Call
+    </a>
+    <!-- TODO: replace the LinkedIn URL below with the real profile link -->
+    <a class="btn wide" id="linkedin" href="https://www.linkedin.com/in/YOUR-PROFILE/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.01 5 2.5 2.5 0 01.01-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.1c.5-1 1.8-1.9 3.7-1.9 4 0 4.7 2.6 4.7 6V21h-4v-4.9c0-1.2 0-2.7-1.7-2.7s-1.9 1.3-1.9 2.6V21h-4z"/></svg>LinkedIn
+    </a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p class="lead">Engineering manager with deep automotive operations experience, leading cross-functional teams that deliver complex programs for premium OEMs. Structured, disciplined and quality-focused, with a record in process improvement and technical leadership. Committed to growing high-performing engineering talent.</p>
+      <div class="stats">
+        <div class="stat"><b>~50</b><span>engineers led across three teams at Bosch</span></div>
+        <div class="stat"><b>10+ yrs</b><span>in automotive engineering and validation</span></div>
+        <div class="stat"><b>ISTQB</b><span>Advanced Level, Test Manager</span></div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <ol class="tl">
+
+        <li class="job now">
+          <h3 class="org">Bosch Engineering Center Sofia</h3>
+          <p class="co-note">2020 – 2026</p>
+          <details class="pos" open>
+            <summary><h3>Engineering Manager | Group Leader</h3><span class="dates">Jun 2023 – Aug 2026</span></summary>
+            <ul>
+              <li><b>Strategic leadership:</b> led three teams of about 50 engineers across System Engineering, Software Development, Cybersecurity and Model-in-the-Loop (MiL) development and evaluation.</li>
+              <li><b>Talent development:</b> ran performance management, mentoring and career growth. Lectured at the Bosch ECS Career Camp.</li>
+              <li><b>Talent acquisition:</b> Lead Technical Examiner for engineering interviews, defining technical competency standards.</li>
+            </ul>
+          </details>
+          <details class="pos">
+            <summary><h3>Technical Team Leader</h3><span class="dates">Mar 2020 – Jun 2023</span></summary>
+            <ul>
+              <li><b>Cross-functional management:</b> coordinated three teams across Systems Engineering, Cybersecurity and Simulation-Based Testing to hit complex validation milestones.</li>
+              <li><b>Process alignment:</b> aligned virtual simulation with physical systems validation, improving test-cycle efficiency and end-to-end coverage.</li>
+              <li><b>Team scaling:</b> contributed to the Bosch ECS Career Camp, mentoring junior and senior specialists.</li>
+            </ul>
+          </details>
+        </li>
+
+        <li class="job">
+          <h3 class="org">Visteon Corporation</h3>
+          <p class="co-note">2016 – 2020</p>
+          <details class="pos">
+            <summary><h3>Validation Project Leader</h3><span class="dates">Mar 2019 – Mar 2020</span></summary>
+            <ul>
+              <li><b>Project and team leadership:</b> led the test engineers on a Daimler AG Instrument Cluster project (MRA2 platform).</li>
+              <li><b>Coordination:</b> aligned validation across global teams, suppliers and stakeholders.</li>
+              <li><b>ASPICE:</b> developed and optimised validation processes to Automotive SPICE standards.</li>
+              <li><b>Infrastructure:</b> planned HiL bench sessions and in-vehicle testing, locally and at customer sites.</li>
+              <li><b>Talent growth:</b> introduced structured career development frameworks for the team.</li>
+            </ul>
+          </details>
+          <details class="pos">
+            <summary><h3>Automation Test Engineer</h3><span class="dates">Jan 2016 – Mar 2019</span></summary>
+            <ul>
+              <li><b>Acting Team Leader</b> for 1.5 years, balancing delivery with coordination and mentoring.</li>
+              <li><b>Automation:</b> designed and ran automated Black Box tests for functional and robustness validation.</li>
+              <li><b>Platforms:</b> validated Instrument Cluster, Multimedia, Connectivity and Phone functions for Mercedes-Benz on MFA2 and MRA2.</li>
+              <li><b>Quality:</b> authored the robustness test strategy and led technical reviews.</li>
+            </ul>
+          </details>
+        </li>
+
+        <li class="job">
+          <h3 class="org">INFINITI Bulgaria</h3>
+          <p class="co-note">2013 – 2015</p>
+          <details class="pos">
+            <summary><h3>Service Advisor &amp; Workshop Manager</h3><span class="dates">Apr 2013 – Dec 2015</span></summary>
+            <ul>
+              <li>Directed daily workshop operations, scheduling and workflow at an authorised Infiniti and Nissan service centre.</li>
+              <li>Ensured compliance with corporate, safety and equipment standards.</li>
+              <li>Managed the repairs department for quality, efficiency and customer satisfaction.</li>
+            </ul>
+          </details>
+        </li>
+
+        <li class="job">
+          <h3 class="org">NetInfo</h3>
+          <p class="co-note">2008 – 2013</p>
+          <details class="pos">
+            <summary><h3>Grand-Prix Editor &amp; F1 Project Leader</h3><span class="dates">Dec 2008 – Apr 2013</span></summary>
+            <ul>
+              <li><b>Jury member</b> for the "Car of the Year" competition.</li>
+              <li>Launched and managed a Formula 1 section across SPORTNI.bg and VESTI.bg.</li>
+              <li>Wrote automotive and motorsport articles covering major Formula 1 events and industry developments.</li>
+            </ul>
+          </details>
+        </li>
+      </ol>
+    </section>
+
+    <section id="education">
+      <h2>Education &amp; certifications</h2>
+      <div class="cols">
+        <div>
+          <div class="item"><b>PhD candidate, Transport, Aviation and Navigation</b><span>Technical University Sofia, 2021 – 2027</span><br><span>Thesis: a system for estimating the predictive friction coefficient ahead of the vehicle.</span></div>
+          <div class="item"><b>MEng, Internal Combustion Engines and Automotive Engineering</b><span>Technical University Sofia, 2018, with distinction</span></div>
+          <div class="item"><b>BEng, Transport Technology and Management</b><span>Technical University Sofia, 2011</span></div>
+        </div>
+        <div>
+          <div class="item"><b>ISTQB Advanced Level, Test Manager</b><span>SEETB, Dec 2017</span></div>
+          <div class="item"><b>ISTQB Agile Tester Extension</b><span>SEETB, Nov 2016</span></div>
+          <div class="item"><b>ISTQB Foundation Level</b><span>SEETB, Apr 2016</span></div>
+          <div class="item"><b>Driver Authorization for Test Vehicles</b><span>RAISCH Group, May 2017</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="more">
+      <h2>Languages &amp; licences</h2>
+      <div class="cols">
+        <div>
+          <div class="item"><b>Bulgarian</b><span>Native</span></div>
+          <div class="item"><b>English</b><span>Professional working proficiency</span></div>
+        </div>
+        <div>
+          <div class="item"><b>Driving licence categories</b></div>
+          <ul class="chips" aria-label="Driving licence categories"><li>A</li><li>B</li><li>C</li><li>D</li><li>E</li></ul>
+          <p class="item" style="margin-top:14px"><span>Authorised for prototype and non-homologated vehicle testing (early development phase, FB-E).</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="mailto:asen@mazgarev.com">asen@mazgarev.com</a> &middot; <a href="tel:+359889403940">+359 889 40 39 40</a> &middot; Sofia, Bulgaria</p>
+  </footer>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById('theme');
+  function isDark(){
+    var t=root.getAttribute('data-theme');
+    return t? t==='dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+  function label(){ btn.textContent=isDark()?'Light mode':'Dark mode'; }
+  try{ var s=localStorage.getItem('theme'); if(s) root.setAttribute('data-theme',s); }catch(e){}
+  label();
+  btn.addEventListener('click',function(){
+    var next=isDark()?'light':'dark';
+    root.setAttribute('data-theme',next);
+    try{ localStorage.setItem('theme',next); }catch(e){}
+    label();
+  });
+
+  var toast=document.getElementById('toast');
+  function say(m){ toast.textContent=m; toast.classList.add('show'); setTimeout(function(){toast.classList.remove('show')},2400); }
+
+  document.getElementById('vcard').addEventListener('click',function(){
+    var v=['BEGIN:VCARD','VERSION:3.0','N:Mazgarev;Asen;;;','FN:Asen Mazgarev',
+      'TITLE:Engineering Manager | Group Leader','TEL;TYPE=CELL:+359889403940',
+      'EMAIL:asen@mazgarev.com','ADR;TYPE=WORK:;;;Sofia;;1612;Bulgaria',
+      'URL:'+location.href.split('#')[0],'END:VCARD'].join('\r\n');
+    var blob=new Blob([v],{type:'text/vcard'}), a=document.createElement('a');
+    a.href=URL.createObjectURL(blob); a.download='Asen_Mazgarev.vcf';
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function(){URL.revokeObjectURL(a.href)},1000);
+    say('Contact file downloaded');
+  });
+})();
+</script>
+</body>
+</html>
